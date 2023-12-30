@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
 let FormSchema =require("../add"); 
-p
+
 router.post('/form', (req, res) => {
     FormSchema.create(req.body, (error, data) => {
         if (error) {
